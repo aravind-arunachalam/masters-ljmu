@@ -4,7 +4,7 @@ Implementation for GQA dataset
 Master's in Machine Learning and AI
 """
 
-# All data downloaded from https://cs.stanford.edu/people/dorarad/gqa/download.html
+# All data downloaded (except for GloVe vectors) from https://cs.stanford.edu/people/dorarad/gqa/download.html
 
 # GQA image files. Large file and will take time to download
 wget -P ../data/gqa https://nlp.stanford.edu/data/gqa/images.zip
@@ -31,3 +31,8 @@ rm ../data/gqa/questions1.2.zip
 wget -P ../data/gqa https://nlp.stanford.edu/data/gqa/sceneGraphs.zip
 unzip ../data/gqa/sceneGraphs.zip
 rm ../data/gqa/sceneGraphs.zip
+
+# GloVe Vectors and dictionary. 
+wget -P data https://convaisharables.blob.core.windows.net/vqa-regat/data/glove.zip
+unzip data/glove.zip -d data/glove
+rm data/glove.zip

@@ -1,6 +1,7 @@
 """
 Author: Aravind Kumar Arunachalam
 Implementation for GQA dataset
+Master's in Machine Learning and AI
 """
 
 from __future__ import print_function
